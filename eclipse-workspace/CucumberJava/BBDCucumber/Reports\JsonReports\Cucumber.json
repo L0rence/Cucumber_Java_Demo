@@ -1,0 +1,367 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-04T09:43:04.054Z",
+        "line": 5,
+        "name": "Test the valid login using Datatable",
+        "description": "",
+        "id": "test-the-login-functionality-of-orange-hrm-application;test-the-valid-login-using-datatable",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7963574829,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "navigate to Orange Hrm application",
+            "match": {
+              "location": "OrangeHRMSteps.navigate_to_Orange_Hrm_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 224313652,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters valid credentials using dataTable",
+            "match": {
+              "location": "OrangeHRMSteps.user_enters_valid_credentials_using_dataTable(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "admin",
+                  "admin123"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3057189890,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on login button",
+            "match": {
+              "location": "OrangeHRMSteps.i_click_on_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 134309487,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "login successful",
+            "match": {
+              "location": "OrangeHRMSteps.login_successful()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test the login functionality of Orange HRM application",
+    "description": "",
+    "id": "test-the-login-functionality-of-orange-hrm-application",
+    "keyword": "Feature",
+    "uri": "file:OrangeDataTable.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-04T09:43:15.479Z",
+        "line": 3,
+        "name": "Title of your Orange HRM scenario",
+        "description": "",
+        "id": "title-of-your-orange-hrm;title-of-your-orange-hrm-scenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5532192617,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "navigate to Orange Hrm application",
+            "match": {
+              "location": "OrangeHRMSteps.navigate_to_Orange_Hrm_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 218050217,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "enter \"admin\" and \"admin1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 7
+                },
+                {
+                  "val": "admin1234",
+                  "offset": 19
+                }
+              ],
+              "location": "OrangeHRMSteps.enter_email_and_password(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1176995664,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on login button",
+            "match": {
+              "location": "OrangeHRMSteps.i_click_on_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 106070455,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "login successful",
+            "match": {
+              "location": "OrangeHRMSteps.login_successful()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-04T09:43:22.529Z",
+        "line": 16,
+        "name": "Title of your Orange HRM scenario12",
+        "description": "",
+        "id": "title-of-your-orange-hrm;title-of-your-orange-hrm-scenario12;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5253645506,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "navigate to Orange Hrm application",
+            "match": {
+              "location": "OrangeHRMSteps.navigate_to_Orange_Hrm_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 334504112,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user admin and admin1234",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 5
+                },
+                {
+                  "val": "admin1234",
+                  "offset": 15
+                }
+              ],
+              "location": "OrangeHRMSteps.user_marsQA_testQA_gmail_com_and(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1235304972,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click on login button",
+            "match": {
+              "location": "OrangeHRMSteps.i_click_on_login_button()"
+            },
+            "keyword": "When "
+          }
+        ]
+      }
+    ],
+    "name": "Title of your Orange HRM",
+    "description": "",
+    "id": "title-of-your-orange-hrm",
+    "keyword": "Feature",
+    "uri": "file:OrangeDemo.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-04T09:43:29.361Z",
+        "line": 3,
+        "name": "When valid creds are used should result in successful login",
+        "description": "",
+        "id": "login-in-page;when-valid-creds-are-used-should-result-in-successful-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5259266408,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am at the login In page",
+            "match": {
+              "location": "demo_Step_pf.i_am_at_the_login_In_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat StepDefinitions.demo_Step_pf.i_enter_valid_creds_and(demo_Step_pf.java:44)\n\tat ✽.I enter valid creds \"admin\" and \"admin123\"(file:demo_PF.feature:5)\n",
+              "duration": 3993188,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "I enter valid creds \"admin\" and \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 21
+                },
+                {
+                  "val": "admin123",
+                  "offset": 33
+                }
+              ],
+              "location": "demo_Step_pf.i_enter_valid_creds_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1160992,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "I click the login button",
+            "match": {
+              "location": "demo_Step_pf.i_click_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 713569,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "I should be logged in successfully",
+            "match": {
+              "location": "demo_Step_pf.i_should_be_logged_in_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login In Page",
+    "description": "",
+    "id": "login-in-page",
+    "keyword": "Feature",
+    "uri": "file:demo_PF.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-04T09:43:34.639Z",
+        "line": 12,
+        "name": "Login functionality scenario",
+        "description": "",
+        "id": "login-mars;login-functionality-scenario;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3101859113,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user navigate to login page",
+            "match": {
+              "location": "login_Step_definition_POM.user_navigate_to_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "cucumber.runner.AmbiguousStepDefinitionsException: \"user enter marsQA.testQA@gmail.com and 123123\" matches more than one step definition:\n  \"user (.*) and (.*)\" in OrangeHRMSteps.user_marsQA_testQA_gmail_com_and(String,String)\n  \"user enter (.*) and (.*)\" in login_Step_definition_POM.user_entername_and_password(String,String)\n\n\tat cucumber.runner.Glue.stepDefinitionMatch(Glue.java:101)\n\tat cucumber.runner.Runner.addTestStepsForPickleSteps(Runner.java:74)\n\tat cucumber.runner.Runner.createTestCaseForPickle(Runner.java:64)\n\tat cucumber.runner.Runner.runPickle(Runner.java:49)\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)\n",
+              "duration": 1064737,
+              "status": "ambiguous"
+            },
+            "line": 7,
+            "name": "user enter marsQA.testQA@gmail.com and 123123",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1232967,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user clickOn the LoginButton",
+            "match": {
+              "location": "login_Step_definition_POM.user_click_on_the_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1270054,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user verify that home Page",
+            "match": {
+              "location": "login_Step_definition_POM.user_verify_that_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login Mars",
+    "description": "",
+    "id": "login-mars",
+    "keyword": "Feature",
+    "uri": "file:login_POM.feature",
+    "tags": []
+  }
+]

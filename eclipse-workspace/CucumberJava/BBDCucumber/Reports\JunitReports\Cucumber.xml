@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="33.695693">
+<testcase classname="Test the login functionality of Orange HRM application" name="Test the valid login using Datatable" time="11.419701">
+<system-out><![CDATA[Given navigate to Orange Hrm application....................................passed
+When user enters valid credentials using dataTable..........................passed
+When I click on login button................................................passed
+Then login successful.......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Title of your Orange HRM" name="Title of your Orange HRM scenario" time="7.048974">
+<system-out><![CDATA[Given navigate to Orange Hrm application....................................passed
+And enter "admin" and "admin1234"...........................................passed
+When I click on login button................................................passed
+Then login successful.......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Title of your Orange HRM" name="Title of your Orange HRM scenario12" time="6.83112">
+<system-out><![CDATA[Given navigate to Orange Hrm application....................................passed
+And user admin and admin1234................................................passed
+When I click on login button................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login In Page" name="When valid creds are used should result in successful login" time="5.273147">
+<failure message="java.lang.NullPointerException&#10;&#9;at StepDefinitions.demo_Step_pf.i_enter_valid_creds_and(demo_Step_pf.java:44)&#10;&#9;at ✽.I enter valid creds &quot;admin&quot; and &quot;admin123&quot;(file:demo_PF.feature:5)&#10;"><![CDATA[Given I am at the login In page.............................................passed
+When I enter valid creds "admin" and "admin123".............................failed
+And I click the login button................................................skipped
+Then I should be logged in successfully.....................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at StepDefinitions.demo_Step_pf.i_enter_valid_creds_and(demo_Step_pf.java:44)
+	at ✽.I enter valid creds "admin" and "admin123"(file:demo_PF.feature:5)
+]]></failure>
+</testcase>
+<testcase classname="Login Mars" name="Login functionality scenario" time="3.122751">
+<failure message="cucumber.runner.AmbiguousStepDefinitionsException: &quot;user enter marsQA.testQA@gmail.com and 123123&quot; matches more than one step definition:&#10;  &quot;user (.*) and (.*)&quot; in OrangeHRMSteps.user_marsQA_testQA_gmail_com_and(String,String)&#10;  &quot;user enter (.*) and (.*)&quot; in login_Step_definition_POM.user_entername_and_password(String,String)&#10;&#10;&#9;at cucumber.runner.Glue.stepDefinitionMatch(Glue.java:101)&#10;&#9;at cucumber.runner.Runner.addTestStepsForPickleSteps(Runner.java:74)&#10;&#9;at cucumber.runner.Runner.createTestCaseForPickle(Runner.java:64)&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:49)&#10;&#9;at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)&#10;&#9;at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)&#10;&#9;at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)&#10;&#9;at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#10;&#9;at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#10;&#9;at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#10;&#9;at io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)&#10;&#9;at io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)&#10;&#9;at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#10;&#9;at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#10;&#9;at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)&#10;&#9;at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#10;&#9;at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)&#10;"><![CDATA[Given user navigate to login page...........................................passed
+And user enter marsQA.testQA@gmail.com and 123123...........................ambiguous
+When user clickOn the LoginButton...........................................skipped
+Then user verify that home Page.............................................skipped
+
+StackTrace:
+cucumber.runner.AmbiguousStepDefinitionsException: "user enter marsQA.testQA@gmail.com and 123123" matches more than one step definition:
+  "user (.*) and (.*)" in OrangeHRMSteps.user_marsQA_testQA_gmail_com_and(String,String)
+  "user enter (.*) and (.*)" in login_Step_definition_POM.user_entername_and_password(String,String)
+
+	at cucumber.runner.Glue.stepDefinitionMatch(Glue.java:101)
+	at cucumber.runner.Runner.addTestStepsForPickleSteps(Runner.java:74)
+	at cucumber.runner.Runner.createTestCaseForPickle(Runner.java:64)
+	at cucumber.runner.Runner.runPickle(Runner.java:49)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)
+]]></failure>
+</testcase>
+</testsuite>
